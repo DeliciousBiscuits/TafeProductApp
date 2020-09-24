@@ -58,6 +58,9 @@ namespace ProductApps
         {
             Price = price;
             Quantity = quantity;
+            Delivery = 25;
+            Wrapping = 5;
+            gst = 1.1M;
         }
 
         //Calculate the total payment
@@ -65,10 +68,16 @@ namespace ProductApps
         {
             TotalPayment = Price * Quantity;
         }
-
+        //Calculate the total Charge
         public void calTotalCharge()
         {
-            TotalPayment = TotalPayment + 25;
+            TotalPayment = (Price * Quantity) + delivery;
         }
+        //Calculate the total Wrapping
+        public void calTotalWrap()
+        {
+            TotalPayment = (Price * Quantity) + delivery + wrapping;
+        }
+
     }
 }
