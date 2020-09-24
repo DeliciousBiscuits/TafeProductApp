@@ -78,6 +78,10 @@ namespace ProductApps
         {
             TotalPayment = (Price * Quantity) + delivery + wrapping;
         }
-
+        //Calculate the total GST
+        public void calTotalGST()
+        {
+            TotalPayment = (Price * Quantity + delivery + wrapping) * gst;
+        }
     }
 }
