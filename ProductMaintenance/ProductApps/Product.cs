@@ -60,7 +60,6 @@ namespace ProductApps
             Quantity = quantity;
             Delivery = 25;
             Wrapping = 5;
-            gst = 1.1M;
         }
 
         //Calculate the total payment
